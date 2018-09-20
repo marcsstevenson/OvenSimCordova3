@@ -1,0 +1,325 @@
+﻿@SmallReduxTop: 125;
+@SmallReduxBottom: 215;
+@DialTempTop: 324px;
+@DialTimerTop: 730px;
+
+@font-face {
+    font-family: 'ds-digitalitalic';
+    src: url('fonts/DS-Digital/ds-digii-webfont.eot');
+    src: url('fonts/DS-Digital/ds-digii-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/DS-Digital/ds-digii-webfont.woff2') format('woff2'), url('fonts/DS-Digital/ds-digii-webfont.woff') format('woff'), url('fonts/DS-Digital/ds-digii-webfont.ttf') format('truetype'), url('fonts/DS-Digital/ds-digii-webfont.svg#ds-digitalitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    /*background-color: #231F20;*/
+    background-color: #000;
+    color: #aaa;
+}
+
+.digial {
+    font-family: 'ds-digitalitalic';
+}
+/*# sourceMappingURL=Style.css.map */
+.displayBox {
+    width: 163px;
+    height: 65px;
+    border: 0;
+    font-size: 55pt;
+    font-family: 'ds-digitalitalic';
+    text-align: center;
+    background-color: #414142;
+    /*background-color: yellow;*/
+    vertical-align: top;
+    color: red;
+}
+
+.controlPanel {
+    height: 1000px;
+    width: 296px;
+    background-image: url('images/D-series-control-panel.png');
+}
+
+.controlPanelSmall {
+    height: 646px;
+    width: 296px;
+    background-color: #231f20;    
+}
+
+.btn {
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+    border: none;
+}
+
+/*.btnLight__Off {
+	background-image: url('images/btnLight_Off.png');
+}
+
+.btnLight__On {
+	background-image: url('images/btnLight_On.png');
+}*/
+
+
+.btnSteam_Off {
+    background-image: url('images/btnSteam_Off.png');
+}
+
+.btnSteam_On {
+    background-image: url('images/btnSteam_On.png');
+}
+
+.btnProgram_Off {
+    background-image: url('images/btnProgram_Off.png');
+}
+
+.btnProgram_On {
+    background-image: url('images/btnProgram_On.png');
+}
+
+.btnTemp_Off {
+    background-image: url('images/btnTemp_Off.png');
+}
+
+.btnTemp_On {
+    background-image: url('images/btnTemp_On.png');
+}
+
+.btnLightPower_Off {
+    background-image: url('images/btnLightPower_Off.png');
+}
+
+.btnLightPower_On {
+    background-image: url('images/btnLightPower_On.png');
+}
+
+.btnFan_Off {
+    background-image: url('images/btnFan_Off.png');
+}
+
+.btnFan_On {
+    background-image: url('images/btnFan_On.png');
+}
+
+.btnTimer_Off {
+    background-image: url('images/btnTimer_Off.png');
+}
+
+.btnTimer_On {
+    background-image: url('images/btnTimer_On.png');
+}
+
+.btnSplit {
+    width: 81px;
+    height: 174px;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    float: left;
+    z-index: 100;
+}
+
+@TempPlusMinusTop: 286px;
+
+.btnTemp_PlusMinus {
+    .btnSplit;
+    position: absolute;
+}
+
+.btnTemp_MinusBase {
+    .btnTemp_PlusMinus;
+    background-image: url('images/btnTemp_Minus.png');
+    left: 74px;
+}
+
+.btnTemp_Minus {
+    .btnTemp_MinusBase;
+    top: @TempPlusMinusTop;
+}
+
+.btnTemp_MinusSmall {
+    .btnTemp_MinusBase;
+    top: @TempPlusMinusTop - @SmallReduxTop;
+}
+
+.btnTemp_PlusBase {
+    .btnTemp_PlusMinus;
+    background-image: url('images/btnTemp_Plus.png');
+    left: 155px;
+    top: 286px;
+}
+
+.btnTemp_Plus {
+    .btnTemp_PlusBase;
+    top: @TempPlusMinusTop;
+}
+.btnTemp_PlusSmall {
+    .btnTemp_PlusBase;
+    top: @TempPlusMinusTop - @SmallReduxTop;
+}
+
+
+
+@TimerPlusMinusTop: 692px;
+
+.btnTimer_PlusMinus {
+    .btnSplit;
+    position: absolute;
+}
+
+.btnTimer_MinusBase {
+    .btnTimer_PlusMinus;
+    background-image: url('images/btnTimer_Minus.png');
+    left: 74px;
+}
+
+.btnTimer_Minus {
+    .btnTimer_MinusBase;
+    top: @TimerPlusMinusTop;
+}
+
+.btnTimer_MinusSmall {
+    .btnTimer_MinusBase;
+    top: @TimerPlusMinusTop - @SmallReduxBottom;
+}
+
+.btnTimer_PlusBase {
+    .btnTimer_PlusMinus;
+    background-image: url('images/btnTimer_Plus.png');
+    left: 155px;
+    top: 286px;
+}
+
+.btnTimer_Plus {
+    .btnTimer_PlusBase;
+    top: @TimerPlusMinusTop;
+}
+.btnTimer_PlusSmall {
+    .btnTimer_PlusBase;
+    top: @TimerPlusMinusTop - @SmallReduxBottom;
+}
+
+.dial {
+    width: 136px;
+    height: 136px;
+    border: none;
+    background-image: url('images/Timer-Knob-2.png');
+    /*background-color: yellow;*/
+    z-index: 1;
+}
+
+.dialRight {
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg); /* Standard syntax */
+    -moz-transition: 0.1s ease-in-out;
+    -o-transition: 0.1s ease-in-out;
+    -webkit-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
+}
+
+.dialLeft {
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg); /* Standard syntax */
+    -moz-transition: 0.1s ease-in-out;
+    -o-transition: 0.1s ease-in-out;
+    -webkit-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
+}
+
+.dialTempBase {
+    .dial;
+    position: absolute;
+    left: 88px;
+}
+
+.dialTemp {
+    .dialTempBase;
+    top: @DialTempTop;
+}
+
+.dialTempSmall {
+    .dialTempBase;
+    top: @DialTempTop - @SmallReduxTop;
+}
+
+.dialTimerBase {
+    .dial;
+    position: absolute;
+    left: 88px;
+}
+
+.dialTimer {
+    .dialTimerBase;
+    top: @DialTimerTop;
+}
+
+.dialTimerSmall {
+    .dialTimerBase;
+    top: @DialTimerTop - @SmallReduxBottom;
+}
+
+/*.dialTimer {
+    .dial;
+    position: absolute;
+    left: 88px;
+    top: 605px;
+}
+
+.dialTimerSmall {
+    .dial;
+    position: absolute;
+    left: 88px;
+    top: 605px;
+}*/
+
+/*Layout*/
+.TopPadding {
+    padding-top: 143px;
+}
+
+.TopPaddingSmall {
+    padding-top: 18px;
+}
+
+.DisplayLeftMargin {
+    margin-left: 65px;
+}
+
+.ButtonsLeftMargin {
+    margin-left: 69px;
+}
+
+.ButtonLeftMargin {
+    margin-left: 5px;
+}
+
+.ButtonsTopMargin {
+    padding-top: 18px;
+}
+
+.TempTopPadding {
+    padding-top: 6px;
+}
+
+.SplitLeftMargin {
+    margin-left: 66px;
+}
+
+.BottomDisplayTopMargin {
+    margin-top: 208px;
+}
+
+.BottomDisplayTopMarginSmall {
+    margin-top: 118px;
+}
+
+.TimerTopPadding {
+    padding-top: 3px;
+}
